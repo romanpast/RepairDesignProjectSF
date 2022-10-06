@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Nunito Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+}
+@font-face {
+    font-family: 'Yeseva One', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+}
