@@ -6,14 +6,37 @@
     font-family: 'Yeseva One', cursive;
     src: url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 }
+// colors
+$yellow: #E3B873;
+$black: #131313;
+// fonts
+$nunito: 'Nunito Sans', sans-serif;
+$yeseva: 'Yeseva One', cursive;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    text-decoration: none;
     
+}
+
+a {
+    text-decoration: none;
+    color: inherit;  
+}
+
+button {
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    background-color: $yellow;
+    border: 0;
+    border-radius: 2px;
+}
+
+.active {
+    color: $yellow;
 }
 
 .container {
@@ -22,13 +45,40 @@
 }
 
 .header-wrapper {
+    background-color: $black;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-family: $nunito;
+    font-size: 11px;
+    color: white;
+    line-height: 15px;
+    text-transform: uppercase;
+    height: 83px;
+
+    
 
     ul {
         display: flex;
         justify-content: space-between;
+        width: 580px;
     }
 
     
+}
+
+.logo {
+        color: $yellow;
+    }
+
+.phone {
+    text-decoration: underline;
+    color: $yellow;
+    }
+
+.btn-menu {
+    padding: 13px 33px;
 }

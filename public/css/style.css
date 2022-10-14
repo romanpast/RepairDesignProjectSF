@@ -11,7 +11,24 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+}
+
+a {
   text-decoration: none;
+  color: inherit;
+}
+
+button {
+  color: white;
+  font-size: 11px;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  border: 0;
+  border-radius: 2px;
+}
+
+.active {
+  color: #E3B873;
 }
 
 .container {
@@ -20,10 +37,35 @@
 }
 
 .header-wrapper {
-  display: flex;
-  justify-content: space-between;
+  background-color: #131313;
 }
-.header-wrapper ul {
+
+.navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 11px;
+  color: white;
+  line-height: 15px;
+  text-transform: uppercase;
+  height: 83px;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  width: 580px;
+}
+
+.logo {
+  color: #E3B873;
+}
+
+.phone {
+  text-decoration: underline;
+  color: #E3B873;
+}
+
+.btn-menu {
+  padding: 13px 33px;
 }/*# sourceMappingURL=style.css.map */
