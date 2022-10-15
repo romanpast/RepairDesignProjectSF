@@ -13,6 +13,10 @@
   list-style: none;
 }
 
+body {
+  color: white;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -27,20 +31,30 @@ button {
   border-radius: 2px;
 }
 
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
 .active {
+  color: #E3B873;
+}
+
+.txt-yellow {
   color: #E3B873;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 92px;
 }
 
-.header-wrapper {
+header {
   background-color: #131313;
 }
 
 .navbar {
+  padding: 25px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,7 +63,6 @@ button {
   color: white;
   line-height: 15px;
   text-transform: uppercase;
-  height: 83px;
 }
 .navbar ul {
   display: flex;
@@ -68,4 +81,8 @@ button {
 
 .btn-menu {
   padding: 13px 33px;
+}
+
+.hero {
+  background-image: url(/img/hero-image.jpg);
 }/*# sourceMappingURL=style.css.map */

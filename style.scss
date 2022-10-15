@@ -2,28 +2,35 @@
     font-family: 'Nunito Sans', sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 }
+
 @font-face {
     font-family: 'Yeseva One', cursive;
     src: url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 }
+
 // colors
 $yellow: #E3B873;
 $black: #131313;
 // fonts
-$nunito: 'Nunito Sans', sans-serif;
-$yeseva: 'Yeseva One', cursive;
+$nunito: 'Nunito Sans',
+sans-serif;
+$yeseva: 'Yeseva One',
+cursive;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    
+}
+
+body {
+    color: white;
 }
 
 a {
     text-decoration: none;
-    color: inherit;  
+    color: inherit;
 }
 
 button {
@@ -35,20 +42,31 @@ button {
     border-radius: 2px;
 }
 
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
 .active {
+    color: $yellow;
+}
+
+// temporary
+.txt-yellow {
     color: $yellow;
 }
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 92px;
 }
 
-.header-wrapper {
+header {
     background-color: $black;
 }
 
 .navbar {
+    padding: 25px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,9 +75,9 @@ button {
     color: white;
     line-height: 15px;
     text-transform: uppercase;
-    height: 83px;
+    // height: 83px;
 
-    
+
 
     ul {
         display: flex;
@@ -67,18 +85,28 @@ button {
         width: 580px;
     }
 
-    
+
 }
 
 .logo {
-        color: $yellow;
-    }
+    color: $yellow;
+}
 
 .phone {
     text-decoration: underline;
     color: $yellow;
-    }
+}
 
 .btn-menu {
     padding: 13px 33px;
 }
+
+.hero {
+    background-image: url(/img/hero-image.jpg);
+}
+
+// .hero-wrapper {
+//     padding: 
+// }
+
+// @media
