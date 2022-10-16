@@ -3,7 +3,7 @@
   src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 }
 @font-face {
-  font-family: "Yeseva One", cursive;
+  font-family: "Yeseva One", serif;
   src: url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 }
 * {
@@ -15,6 +15,7 @@
 
 body {
   color: white;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 a {
@@ -25,14 +26,18 @@ a {
 button {
   color: white;
   font-size: 11px;
+  font-family: "Nunito Sans", sans-serif;
   text-transform: uppercase;
   background-color: #E3B873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
   border: 0;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 h1, h2, h3 {
   text-transform: uppercase;
+  font-family: "Yeseva One", serif;
 }
 
 .active {
@@ -54,7 +59,6 @@ header {
 }
 
 .navbar {
-  padding: 25px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,6 +67,7 @@ header {
   color: white;
   line-height: 15px;
   text-transform: uppercase;
+  height: 83px;
 }
 .navbar ul {
   display: flex;
@@ -81,8 +86,74 @@ header {
 
 .btn-menu {
   padding: 13px 33px;
+  font-style: italic;
 }
 
 .hero {
+  background-size: contain;
   background-image: url(/img/hero-image.jpg);
+}
+
+.hero-wrapper {
+  padding: 194px 0px 208px 40px;
+  max-width: 50%;
+}
+.hero-wrapper h1 {
+  font-size: 40px;
+  line-height: 53px;
+  padding-bottom: 19px;
+}
+.hero-wrapper p {
+  font-size: 22px;
+  padding-bottom: 35px;
+  line-height: 36px;
+}
+.hero-wrapper button {
+  width: 220px;
+  height: 51px;
+  font-style: italic;
+  margin-right: 21px;
+  margin-bottom: 26px;
+}
+.hero-wrapper button:last-child {
+  background: none;
+  border: 1px solid #FFFFFF;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 1300px) {
+  nav, .btn-menu {
+    display: none;
+  }
+  .navbar {
+    height: 57px;
+  }
+  .phone {
+    text-decoration: none;
+    color: white;
+  }
+  .hero-wrapper {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 18px;
+  }
+  .hero-wrapper {
+    max-width: 100%;
+    padding: 85px 0 61px;
+  }
+  .hero-wrapper h1 {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .hero-wrapper p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .hero-wrapper button {
+    width: 100%;
+    border-radius: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
