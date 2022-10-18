@@ -127,7 +127,8 @@ header {
 .projects {
   background-color: #131313;
 }
-.projects h2, .projects h3 {
+.projects h2,
+.projects h3 {
   color: #E3B873;
 }
 
@@ -148,7 +149,7 @@ header {
   font-size: 14px;
 }
 
-.projects-titles {
+.projects-entities {
   grid-area: titles;
   display: grid;
   justify-content: start;
@@ -178,6 +179,12 @@ header {
   display: flex;
   line-height: 19.4px;
 }
+.slide-titles li:first-child {
+  color: #E3B873;
+}
+.slide-titles li:first-child .underline {
+  border: 1px solid #E3B873;
+}
 
 .slide-title {
   padding-right: 60.5px;
@@ -187,16 +194,20 @@ header {
   border: 1px solid #131313;
 }
 
-#pagination-outer {
+.pagination button {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.pagination-outer {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 80px;
 }
-#pagination-outer button {
-  background: none;
-  box-shadow: none;
-  border: none;
+.pagination-outer :nth-child(2) {
+  background-color: white;
 }
 
 .ball {
@@ -206,6 +217,15 @@ header {
   border-radius: 20px;
   margin: auto 17px;
   cursor: pointer;
+}
+
+.pagination-inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: -50%;
+  margin: auto 14px;
+  display: none;
 }
 
 #slider {
@@ -263,18 +283,6 @@ header {
     grid-template-areas: "header" "slider" "titles";
     justify-content: center;
   }
-  .projects-header {
-    text-align: center;
-    margin: 36px auto 70px;
-  }
-  .projects-header h3 {
-    font-size: 22px;
-    line-height: 30px;
-  }
-  .projects-header p {
-    font-size: 11px;
-    line-height: 17px;
-  }
   .slider-wrapper {
     margin: 0 auto 36px;
     width: auto;
@@ -288,8 +296,11 @@ header {
   #slider {
     background-position: center;
   }
-  #pagination-outer {
+  .pagination-outer {
     display: none;
+  }
+  .pagination-inner {
+    display: flex;
   }
 }
 @media screen and (max-width: 768px) {
@@ -319,5 +330,17 @@ header {
     width: 340px;
     height: 241px;
     margin: 0;
+  }
+  .projects-header {
+    text-align: center;
+    margin: 36px auto 70px;
+  }
+  .projects-header h3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .projects-header p {
+    font-size: 11px;
+    line-height: 17px;
   }
 }/*# sourceMappingURL=style.css.map */

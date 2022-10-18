@@ -154,7 +154,8 @@ header {
 .projects {
     background-color: $black;
 
-    h2, h3 {
+    h2,
+    h3 {
         color: $yellow;
     }
 }
@@ -180,7 +181,7 @@ header {
     }
 }
 
-.projects-titles {
+.projects-entities {
     grid-area: titles;
     display: grid;
     justify-content: start;
@@ -209,6 +210,14 @@ header {
     font-size: 14px;
     display: flex;
     line-height: 19.4px;
+
+    li:first-child {
+        color: $yellow;
+
+        .underline {
+            border: 1px solid $yellow;
+        }
+    }
 }
 
 .slide-title {
@@ -223,19 +232,26 @@ header {
 
 // pagination
 
-#pagination-outer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    
-
+.pagination {
     button {
         background: none;
         box-shadow: none;
         border: none;
     }
-  }
+}
+
+
+.pagination-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+
+    :nth-child(2) {
+        background-color: white;
+    }
+}
+
 .ball {
     height: 9.57px;
     width: 9.57px;
@@ -243,9 +259,20 @@ header {
     border-radius: 20px;
     margin: auto 17px;
     cursor: pointer;
-  }
 
-  #slider {
+}
+
+.pagination-inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: -50%;
+    margin: auto 14px;
+    display: none;
+}
+
+
+#slider {
     width: 679px;
     height: 482px;
     margin-top: 45px;
@@ -253,7 +280,7 @@ header {
     scroll-behavior: smooth;
     display: flex;
     justify-content: space-between;
-  }
+}
 
 
 .slide {
@@ -268,7 +295,7 @@ header {
     transition: all 0.3s;
     cursor: pointer;
     overflow: hidden;
-  }
+}
 
 .slide-1 {
     background-image: url('../img/slide1.jpg');
@@ -307,27 +334,14 @@ header {
 
     // section projects
     .projects-wrapper {
-        grid-template-areas: 
-            "header" 
+        grid-template-areas:
+            "header"
             "slider"
             "titles";
         justify-content: center;
     }
 
-    .projects-header {
-        text-align: center;
-        margin: 36px auto 70px;
 
-        h3 {
-            font-size: 22px;
-            line-height: 30px;
-        }
-
-        p {
-            font-size: 11px;
-            line-height: 17px;
-        }
-    }
 
     .slider-wrapper {
         margin: 0 auto 36px;
@@ -346,10 +360,14 @@ header {
         background-position: center;
     }
 
-    #pagination-outer {
+    .pagination-outer {
         display: none;
     }
-    
+
+    .pagination-inner {
+        display: flex;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -390,6 +408,21 @@ header {
         width: 340px;
         height: 241px;
         margin: 0;
+    }
+
+    .projects-header {
+        text-align: center;
+        margin: 36px auto 70px;
+
+        h3 {
+            font-size: 22px;
+            line-height: 30px;
+        }
+
+        p {
+            font-size: 11px;
+            line-height: 17px;
+        }
     }
 
 }
