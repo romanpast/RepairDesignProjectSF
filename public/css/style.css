@@ -16,7 +16,7 @@
 body {
   color: white;
   font-family: "Nunito Sans", sans-serif;
-  overflow: hidden;
+  overflow: initial;
 }
 
 a {
@@ -36,7 +36,9 @@ button {
   cursor: pointer;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-transform: uppercase;
   font-family: "Yeseva One", serif;
 }
@@ -92,7 +94,7 @@ header {
 
 .hero {
   background-image: url("../img/hero.jpg");
-  background-size: contain;
+  background-size: 100% auto;
 }
 
 .hero-wrapper {
@@ -122,8 +124,129 @@ header {
   box-shadow: none;
 }
 
+.projects {
+  background-color: #131313;
+}
+.projects h2, .projects h3 {
+  color: #E3B873;
+}
+
+.projects-wrapper {
+  padding: 26px 42px 90px;
+  display: grid;
+  grid-template-areas: "header slider" "titles slider";
+}
+
+.projects-header {
+  grid-area: header;
+  margin: 68px 50px 55px 0;
+}
+.projects-header h2 {
+  margin-bottom: 34px;
+}
+.projects-header p {
+  font-size: 14px;
+}
+
+.projects-titles {
+  grid-area: titles;
+  display: grid;
+  justify-content: start;
+  grid-template-columns: auto auto;
+  -moz-column-gap: 67px;
+       column-gap: 67px;
+  row-gap: 45px;
+}
+
+.projects-info {
+  display: block;
+  font-size: 13px;
+  line-height: 21px;
+  margin-top: 9px;
+}
+
+.slider-wrapper {
+  grid-area: slider;
+  width: 680px;
+}
+
+.slide-titles {
+  font-family: "Yeseva One", serif;
+  color: rgba(255, 255, 255, 0.3019607843);
+  text-transform: uppercase;
+  font-size: 14px;
+  display: flex;
+  line-height: 19.4px;
+}
+
+.slide-title {
+  padding-right: 60.5px;
+}
+
+.underline {
+  border: 1px solid #131313;
+}
+
+#pagination-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+#pagination-outer button {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.ball {
+  height: 9.57px;
+  width: 9.57px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  margin: auto 17px;
+  cursor: pointer;
+}
+
+#slider {
+  width: 679px;
+  height: 482px;
+  margin-top: 45px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide {
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0 5px;
+  transition: transform 1s;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: all 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.slide-1 {
+  background-image: url("../img/slide1.jpg");
+}
+
+.slide-2 {
+  background-image: url("../img/slide2.jpg");
+}
+
+.slide-3 {
+  background-image: url("../img/slide3.jpg");
+}
+
 @media screen and (max-width: 1300px) {
-  nav, .btn-menu {
+  nav,
+.btn-menu {
     display: none;
   }
   .navbar {
@@ -135,6 +258,38 @@ header {
   }
   .hero-wrapper {
     max-width: 100%;
+  }
+  .projects-wrapper {
+    grid-template-areas: "header" "slider" "titles";
+    justify-content: center;
+  }
+  .projects-header {
+    text-align: center;
+    margin: 36px auto 70px;
+  }
+  .projects-header h3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .projects-header p {
+    font-size: 11px;
+    line-height: 17px;
+  }
+  .slider-wrapper {
+    margin: 0 auto 36px;
+    width: auto;
+  }
+  .slide-titles {
+    justify-content: space-between;
+  }
+  .slide-title {
+    padding: 0;
+  }
+  #slider {
+    background-position: center;
+  }
+  #pagination-outer {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -156,5 +311,13 @@ header {
   .hero-wrapper button {
     width: 100%;
     border-radius: 0;
+  }
+  .slide-titles {
+    display: none;
+  }
+  #slider {
+    width: 340px;
+    height: 241px;
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */
