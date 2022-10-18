@@ -24,10 +24,13 @@ serif;
     list-style: none;
 }
 
+html, body {
+    overflow: hidden;
+}
+
 body {
     color: white;
     font-family: $nunito;
-    overflow: initial;
 }
 
 a {
