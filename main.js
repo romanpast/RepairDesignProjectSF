@@ -41,28 +41,27 @@ const prev = document.querySelectorAll('.prev');
 const next = document.querySelectorAll('.next');
 const slideTitle = document.querySelectorAll('.slide-title');
 const underline = document.querySelectorAll('.underline');
-let section = 0;
+let index = 0;
 
 
 const updatePag = () => {
     pagination.forEach((el) => el.style.backgroundColor = 'rgba(255, 255, 255, 0.3)')
     slideTitle.forEach((el) => el.style.color = 'rgba(255, 255, 255, 0.3)')
     underline.forEach((el) => el.style.border = '#131313');
-    pagination[section].style.backgroundColor = 'white';
-    underline[section].style.border = '1px solid #E3B873';
-    slideTitle[section].style.color = '#E3B873'
+    pagination[index].style.backgroundColor = 'white';
+    underline[index].style.border = '1px solid #E3B873';
+    slideTitle[index].style.color = '#E3B873'
 };
 
 const updateInfo = () => {
-    cityTitle.innerText = entities[section].city
-    aptArea.innerText = entities[section].aptArea
-    repairTime.innerText = entities[section].repairTime
+    cityTitle.innerText = entities[index].city
+    aptArea.innerText = entities[index].aptArea
+    repairTime.innerText = entities[index].repairTime
 }
 
 
 pagination.forEach((curItem, index) => {
     curItem.addEventListener('click', () => {
-        section = index;
         updatePag();
         updateInfo();
         slider.scrollLeft = (index * (slider.clientWidth)) + (index * 10)
@@ -73,8 +72,8 @@ pagination.forEach((curItem, index) => {
 
 prev.forEach((el) => {
     el.addEventListener('click', () => {
-        section == 0 ? section = 2 : section--;
-        slider.scrollLeft = (section * (slider.clientWidth)) + (section * 10)
+        index == 0 ? index = 2 : index--;
+        slider.scrollLeft = (index * (slider.clientWidth)) + (index * 10)
         updatePag();
         updateInfo();
     })
@@ -82,8 +81,8 @@ prev.forEach((el) => {
 
 next.forEach((el) => {
     el.addEventListener('click', () => {
-        section == 2 ? section = 0 : section++;
-        slider.scrollLeft = (section * (slider.clientWidth)) + (section * 10)
+        index == 2 ? index = 0 : index++;
+        slider.scrollLeft = (index * (slider.clientWidth)) + (index * 10)
         updatePag();
         updateInfo();
     })
