@@ -256,18 +256,6 @@ header {
   overflow: hidden;
 }
 
-.slide-1 {
-  background-image: url("../img/slide1.jpg");
-}
-
-.slide-2 {
-  background-image: url("../img/slide2.jpg");
-}
-
-.slide-3 {
-  background-image: url("../img/slide3.jpg");
-}
-
 @media screen and (max-width: 1300px) {
   nav,
 .btn-menu {
