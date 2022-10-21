@@ -9,8 +9,6 @@ mobileSize.addEventListener("change", () => {
 });
 
 
-
-
 // slider
 const entities = [{
         city: "Rostov-on-Don LCD admiral",
@@ -82,6 +80,15 @@ pagination.forEach((el, ind) => {
     })
 })
 
+slideTitle.forEach((el, ind) => {
+    el.addEventListener('click', () => {
+        index = ind;
+        updatePag();
+        updateInfo();
+        slider.scrollLeft = (index * (slider.clientWidth)) + (index * 10)
+    })
+})
+
 prev.forEach((el) => {
     el.addEventListener('click', () => {
         prevSlide();
@@ -94,12 +101,12 @@ next.forEach((el) => {
     })
 })
 
-// event on finger swipe
+// event on finger swipe/touch
 
 let touchStartX = 0;
 let touchEndX = 0;
     
-const checkDirection = () => touchEndX > touchStartX ? prevSlide() : nextSlide();
+const checkDirection = () => (touchEndX > touchStartX) ? prevSlide() : nextSlide();
 
 slider.addEventListener('touchstart', e => {
   touchStartX = e.changedTouches[0].screenX
@@ -107,5 +114,5 @@ slider.addEventListener('touchstart', e => {
 
 slider.addEventListener('touchend', e => {
   touchEndX = e.changedTouches[0].screenX
-  checkDirection()
+  checkDirection();
 })
