@@ -59,31 +59,53 @@ const updateInfo = () => {
     repairTime.innerText = entities[index].repairTime
 }
 
+const prevSlide = () => {
+    index == 0 ? index = 2 : index--;
+    slider.scrollLeft = (index * (slider.clientWidth)) + (index * 10)
+    updatePag();
+    updateInfo();
+}
 
-pagination.forEach((curItem, index) => {
-    curItem.addEventListener('click', () => {
+const nextSlide = () => {
+    index == 2 ? index = 0 : index++;
+    slider.scrollLeft = (index * (slider.clientWidth)) + (index * 10)
+    updatePag();
+    updateInfo();
+}
+
+pagination.forEach((el, ind) => {
+    el.addEventListener('click', () => {
+        index = ind;
         updatePag();
         updateInfo();
         slider.scrollLeft = (index * (slider.clientWidth)) + (index * 10)
-
     })
 })
 
-
 prev.forEach((el) => {
     el.addEventListener('click', () => {
-        index == 0 ? index = 2 : index--;
-        slider.scrollLeft = (index * (slider.clientWidth)) + (index * 10)
-        updatePag();
-        updateInfo();
+        prevSlide();
     })
 })
 
 next.forEach((el) => {
     el.addEventListener('click', () => {
-        index == 2 ? index = 0 : index++;
-        slider.scrollLeft = (index * (slider.clientWidth)) + (index * 10)
-        updatePag();
-        updateInfo();
+      nextSlide();  
     })
+})
+
+// event on finger swipe
+
+let touchStartX = 0;
+let touchEndX = 0;
+    
+const checkDirection = () => touchEndX < touchStartX ? nextSlide() : prevSlide();
+
+slider.addEventListener('touchstart', e => {
+  touchStartX = e.changedTouches[0].screenX
+})
+
+slider.addEventListener('touchend', e => {
+  touchEndX = e.changedTouches[0].screenX
+  checkDirection()
 })
