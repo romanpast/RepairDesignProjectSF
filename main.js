@@ -99,7 +99,7 @@ next.forEach((el) => {
 let touchStartX = 0;
 let touchEndX = 0;
     
-const checkDirection = () => touchEndX < touchStartX ? nextSlide() : prevSlide();
+const checkDirection = () => touchEndX > touchStartX ? prevSlide() : nextSlide();
 
 slider.addEventListener('touchstart', e => {
   touchStartX = e.changedTouches[0].screenX
