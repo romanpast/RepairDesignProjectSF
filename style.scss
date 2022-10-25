@@ -306,6 +306,32 @@ header {
    
 }
 
+
+// section video
+
+.online {
+    // background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.online-wrapper {
+    width: 100%;
+    background-color: $black;
+}
+
+.video {
+    cursor: pointer;
+    background: linear-gradient(
+        $black 0%,
+        $black 50%,
+        white 50%,
+        white 100%
+    );
+}
+
 @media screen and (max-width: 1300px) {
 
     // header
@@ -420,5 +446,16 @@ header {
             line-height: 17px;
         }
     }
+
+    // online
+    .video {
+        cursor: pointer;
+        background: $black;
+
+        img {
+            width: 340px;
+        }
+    }
+    
 
 }

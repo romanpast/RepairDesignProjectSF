@@ -259,6 +259,23 @@ header {
   height: 100%;
 }
 
+.online {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.online-wrapper {
+  width: 100%;
+  background-color: #131313;
+}
+
+.video {
+  cursor: pointer;
+  background: linear-gradient(#131313 0%, #131313 50%, white 50%, white 100%);
+}
+
 @media screen and (max-width: 1300px) {
   nav,
 .btn-menu {
@@ -337,5 +354,12 @@ header {
   .projects-header p {
     font-size: 11px;
     line-height: 17px;
+  }
+  .video {
+    cursor: pointer;
+    background: #131313;
+  }
+  .video img {
+    width: 340px;
   }
 }/*# sourceMappingURL=style.css.map */
