@@ -1,0 +1,25 @@
+{
+  "name": "repairdesignprojectsf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romanpast/RepairDesignProjectSF.git"
+  },
+  "author": "Roman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romanpast/RepairDesignProjectSF/issues"
+  },
+  "homepage": "https://github.com/romanpast/RepairDesignProjectSF#readme",
+  "devDependencies": {
+    "autoprefixer-core": "^6.0.1",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sourcemaps": "^3.0.0"
+  }
+}
