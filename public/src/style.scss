@@ -283,7 +283,7 @@ header {
 }
 
 
-#slider {
+.slider-top {
     width: 679px;
     height: 482px;
     margin-top: 45px;
@@ -518,7 +518,7 @@ header {
         padding: 0;
     }
 
-    #slider {
+    .slider-top {
         background-position: center;
     }
 
@@ -566,7 +566,7 @@ header {
         display: none;
     }
 
-    #slider {
+    .slider-top {
         width: 340px;
         height: 241px;
         margin: 0;
@@ -599,3 +599,4 @@ header {
     
 
 }
+

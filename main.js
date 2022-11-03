@@ -9,7 +9,7 @@ mobileSize.addEventListener("change", () => {
 });
 
 
-// slider
+// slider-top
 const entities = [{
         city: "Rostov-on-Don LCD admiral",
         aptArea: "81 m2",
@@ -33,7 +33,7 @@ const cityTitle = document.querySelector('#cityTitle');
 const aptArea = document.querySelector('#aptArea');
 const repairTime = document.querySelector('#repairTime');
 const pagination = document.querySelectorAll('.ball');
-const slider = document.querySelector('#slider');
+const slider = document.querySelector('#slider-top');
 const slide = document.querySelectorAll('.slide');
 const prev = document.querySelectorAll('.prev');
 const next = document.querySelectorAll('.next');

@@ -252,7 +252,7 @@ header {
   display: none;
 }
 
-#slider {
+.slider-top {
   width: 679px;
   height: 482px;
   margin-top: 45px;
@@ -452,7 +452,7 @@ header {
   .slide-title {
     padding: 0;
   }
-  #slider {
+  .slider-top {
     background-position: center;
   }
   .pagination-outer {
@@ -486,7 +486,7 @@ header {
   .slide-titles {
     display: none;
   }
-  #slider {
+  .slider-top {
     width: 340px;
     height: 241px;
     margin: 0;
