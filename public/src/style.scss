@@ -445,6 +445,7 @@ header {
     justify-content: center;
   }
   .checkmark::before{
+    position: absolute;
     content: url('/public/img/tick.png');
     opacity: 0;
     transition: .2s;

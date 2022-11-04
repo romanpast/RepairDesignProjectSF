@@ -8,6 +8,11 @@ mobileSize.addEventListener("change", () => {
     changeText(mobileSize);
 });
 
+// checkbox
+const checkbox = document.getElementById("checkmark");
+const checkboxBefore = window.getComputedStyle(checkbox, "::before");
+const checked = () => checkboxBefore.checked ? checkboxBefore.opasity = "1" : checkbox.opasity = 0;
+
 
 // slider-top
 const entities = [{

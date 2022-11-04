@@ -372,6 +372,7 @@ header {
 }
 
 .checkmark:before {
+  position: absolute;
   content: url("/public/img/tick.png");
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
