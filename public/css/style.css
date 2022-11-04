@@ -72,12 +72,9 @@ header {
 }
 
 .navbar {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: space-between;
+  align-items: center;
   font-family: "Nunito Sans", sans-serif;
   font-size: 11px;
   color: white;
@@ -86,10 +83,8 @@ header {
   height: 83px;
 }
 .navbar ul {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
   width: 580px;
 }
 
@@ -149,7 +144,6 @@ header {
 
 .projects-wrapper {
   padding: 26px 42px 90px;
-  display: -ms-grid;
   display: grid;
   grid-template-areas: "header slider" "titles slider";
 }
@@ -167,13 +161,11 @@ header {
 
 .projects-entities {
   grid-area: titles;
-  display: -ms-grid;
   display: grid;
-  -ms-flex-pack: start;
-      justify-content: start;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  column-gap: 67px;
+  justify-content: start;
+  grid-template-columns: auto auto;
+  -moz-column-gap: 67px;
+       column-gap: 67px;
   row-gap: 45px;
 }
 
@@ -194,7 +186,6 @@ header {
   color: rgba(255, 255, 255, 0.3019607843);
   text-transform: uppercase;
   font-size: 14px;
-  display: -ms-flexbox;
   display: flex;
   line-height: 19.4px;
 }
@@ -220,12 +211,9 @@ header {
 }
 
 .pagination-outer {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 80px;
 }
 .pagination-outer :nth-child(2) {
@@ -243,10 +231,8 @@ header {
 
 .pagination-inner {
   position: relative;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
   top: -50%;
   margin: auto 14px;
   display: none;
@@ -258,15 +244,12 @@ header {
   margin-top: 45px;
   overflow: hidden;
   scroll-behavior: smooth;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
 }
 
 .slide {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   height: 100%;
   width: 100%;
   margin: 0 5px;
@@ -283,12 +266,9 @@ header {
 }
 
 .online {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background: linear-gradient(#131313 0px, #131313 329px, white 329px, white 100%);
 }
@@ -298,12 +278,9 @@ header {
 .online-wrapper {
   color: #363636;
   max-width: 820px;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .online-wrapper h3 {
@@ -325,21 +302,16 @@ header {
 }
 
 .input-field {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: start;
-      align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .submitform-online {
   max-width: 770px;
   margin: 0 auto 147px;
-  display: -ms-grid;
   display: grid;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
   grid-template-areas: "fname lname button" "check check check";
 }
 .submitform-online .fname {
@@ -369,12 +341,9 @@ header {
 }
 
 .checkbox-field {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .checkbox {
@@ -382,12 +351,9 @@ header {
 }
 
 .checkmark {
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 18px;
   height: 18px;
   border-radius: 1px;
@@ -438,16 +404,14 @@ header {
   }
   .projects-wrapper {
     grid-template-areas: "header" "slider" "titles";
-    -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
   }
   .slider-wrapper {
     margin: 0 auto 36px;
     width: auto;
   }
   .slide-titles {
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    justify-content: space-between;
   }
   .slide-title {
     padding: 0;
@@ -459,7 +423,6 @@ header {
     display: none;
   }
   .pagination-inner {
-    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -504,11 +467,8 @@ header {
     line-height: 17px;
   }
   .video {
+    width: 340px;
     cursor: pointer;
     background: #131313;
   }
-  .video img {
-    width: 340px;
-  }
 }/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
