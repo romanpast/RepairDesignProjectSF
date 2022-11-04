@@ -447,7 +447,7 @@ header {
   }
   .checkmark::before{
     position: absolute;
-    content: url('/public/img/tick.png');
+    content: url('../img/tick.png');
     opacity: 0;
     transition: .2s;
   }
