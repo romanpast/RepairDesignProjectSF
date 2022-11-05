@@ -411,11 +411,15 @@ header {
   text-align: center;
 }
 
-.prices-container {
+.prices-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.card-wrapper {
+  height: 608px;
 }
 
 .price-card {
@@ -476,6 +480,10 @@ header {
   background: url(../img/item3.jpg);
   background-size: contain;
   margin: 0;
+}
+
+.request-wrapper {
+  margin-top: 418px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -630,5 +638,8 @@ header {
   .item2 {
     background: url(../img/item2-m.jpg);
     background-size: cover;
+  }
+  .request-wrapper {
+    display: none;
   }
 }

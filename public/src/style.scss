@@ -484,17 +484,16 @@ header {
     text-align: center;
 }
 
-.prices-container {
+.prices-wrapper {
     @include flexbox();
     flex-wrap: wrap;
-
-    
-
-    
+     
 
 }
 
-
+.card-wrapper {
+    height: 608px;
+}
 
 .price-card {
     background-size: contain;
@@ -566,6 +565,10 @@ header {
     margin: 0;
 }
 
+
+.request-wrapper {
+    margin-top: 418px;
+}
 
 @media screen and (max-width: 1300px) {
 
@@ -796,7 +799,7 @@ header {
         
     }
 
-    // prices
+    // section types
 
     .price-card {
         margin: 0 auto 175px;
@@ -816,6 +819,9 @@ header {
         background-size: cover;
     }
     
+    .request-wrapper {
+        display: none;
+    }
         
     
 
