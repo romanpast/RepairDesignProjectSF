@@ -424,6 +424,7 @@ header {
 }
 
 .price-card {
+  background-size: contain;
   margin-right: 30px;
   width: 392px;
   height: 421px;
@@ -468,14 +469,17 @@ header {
 
 .item1 {
   background: url(../img/item1.jpg);
+  background-size: contain;
 }
 
 .item2 {
   background: url(../img/item2.jpg);
+  background-size: contain;
 }
 
 .item3 {
   background: url(../img/item3.jpg);
+  background-size: contain;
   margin: 0;
 }
 
@@ -575,6 +579,7 @@ header {
     line-height: 17px;
   }
   .online {
+    margin-bottom: 58px;
     background: linear-gradient(to top, white 0px, white 25px, #131313 25px, #131313 100%);
   }
   .submitform-online {
@@ -616,6 +621,21 @@ header {
     width: 340px;
     cursor: pointer;
     background: #131313;
+  }
+  .price-card {
+    margin: 0 auto 175px;
+    width: 340px;
+    height: 421px;
+    text-align: start;
+  }
+  .item-info {
+    width: 270px;
+    top: 223px;
+    margin: 0;
+  }
+  .item2 {
+    background: url(../img/item2-m.jpg);
+    background-size: cover;
   }
 }
 /*# sourceMappingURL=style.css.map */
