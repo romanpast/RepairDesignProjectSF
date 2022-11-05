@@ -1,2 +1,30 @@
 {
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "php.validate.executablePath": "c:/php/php.exe",
+    "liveServer.settings.useWebExt": true,
+    "php.validate.run": "onType",
+    "[css]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "files.exclude": {
+        "**/.DS_Store": false,
+        "**/.git": false
+    },
+    "git.autoRepositoryDetection": false,
+    "js/ts.implicitProjectConfig.target": "ES2022",
+    "eslint.lintTask.enable": true,
+    "liveSassCompile.settings.rootIsWorkspace": null,
+    "liveSassCompile.settings.formats": [{
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "./public/src"
+    }],
+    "beautify.config": "",
+    "scss.lint.idSelector": "warning",
+    "liveSassCompile.settings.includeItems": [
+    
+    ],
+    "liveSassCompile.settings.generateMap": false
 }
