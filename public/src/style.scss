@@ -503,9 +503,9 @@ header {
 
 }
 
-.card-wrapper {
-    height: 608px;
-}
+// .card-wrapper {
+//     height: 608px;
+// }
 
 .price-card {
     background-size: contain;
@@ -672,6 +672,15 @@ header {
         }
     }
     
+    // section types
+    .prices-wrapper {
+        flex-direction: column;
+    
+    }
+
+    .price-card {
+        margin: 0 auto 235px;
+    }
 
 }
 
