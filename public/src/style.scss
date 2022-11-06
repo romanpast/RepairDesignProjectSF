@@ -363,17 +363,26 @@ header {
 
 .submitform {
 
+    label {
+        color:rgb(255, 255, 255, 50%);
+        font-size: 13px;
+    }
+
+    
+        
+
     input {
+        background-color: $black;
+        color:#FFFFFF;
+        width: 100%;
         font-size: 14px;
         border: none;
         padding-top: 7px;
         padding-bottom: 8px;
-        
+        border-bottom: 1px solid rgb(255, 255, 255, 15%);
     }
 
-        label {
-            font-size: 13px;
-        }
+       
     }
 
     .input-field {
@@ -414,6 +423,8 @@ header {
     }
 
     input {
+        color: $black-text;
+        background-color: #FFFFFF;
         border-bottom: 1px solid rgb(54, 54, 54, 30%);
         width: 230px;
     }
@@ -461,7 +472,8 @@ header {
 
 .checkbox-text {
     font-size: 14px;
-}
+    color:#FFFFFF;
+    }
 
 .checkbox-text-first {
         color: #181818;
@@ -568,6 +580,11 @@ header {
 
 .request-wrapper {
     margin-top: 418px;
+}
+
+.submitform-request {
+    background-color: $black;
+
 }
 
 @media screen and (max-width: 1300px) {
@@ -749,14 +766,16 @@ header {
         "check"
         "button";
 
-        label {
-            color:rgb(255, 255, 255, 50%)
-        }
-    
         input {
-            background-color: $black;
-            color:#FFFFFF;
             width: 100%;
+            background-color: $black;
+            color: #FFFFFF;
+            border-bottom: 1px solid rgb(255, 255, 255, 15%);
+
+        }
+
+        label {
+            color: rgba(255, 255, 255, 0.5);
         }
 
         .fname {

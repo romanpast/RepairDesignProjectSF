@@ -300,14 +300,19 @@ header {
   font-size: 18px;
 }
 
+.submitform label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+}
 .submitform input {
+  background-color: #131313;
+  color: #FFFFFF;
+  width: 100%;
   font-size: 14px;
   border: none;
   padding-top: 7px;
   padding-bottom: 8px;
-}
-.submitform label {
-  font-size: 13px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .input-field {
@@ -341,6 +346,8 @@ header {
   color: rgba(54, 54, 54, 0.5);
 }
 .submitform-online input {
+  color: #363636;
+  background-color: #FFFFFF;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   width: 230px;
 }
@@ -391,6 +398,7 @@ header {
 
 .checkbox-text {
   font-size: 14px;
+  color: #FFFFFF;
 }
 
 .checkbox-text-first {
@@ -484,6 +492,10 @@ header {
 
 .request-wrapper {
   margin-top: 418px;
+}
+
+.submitform-request {
+  background-color: #131313;
 }
 
 @media screen and (max-width: 1300px) {
@@ -590,13 +602,14 @@ header {
     gap: 10px;
     grid-template-areas: "fname" "lname" "check" "button";
   }
-  .submitform-online label {
-    color: rgba(255, 255, 255, 0.5);
-  }
   .submitform-online input {
+    width: 100%;
     background-color: #131313;
     color: #FFFFFF;
-    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .submitform-online label {
+    color: rgba(255, 255, 255, 0.5);
   }
   .submitform-online .fname {
     margin-bottom: 63px;
