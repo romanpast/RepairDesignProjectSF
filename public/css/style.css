@@ -302,14 +302,20 @@ header {
   font-size: 18px;
 }
 
+.submitform label {
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+}
 .submitform input {
+  background-color: #131313;
+  color: #FFFFFF;
+  width: 100%;
   font-size: 14px;
   border: none;
   padding-top: 7px;
   padding-bottom: 8px;
-}
-.submitform label {
-  font-size: 13px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .input-field {
@@ -344,6 +350,8 @@ header {
   color: rgba(54, 54, 54, 0.5);
 }
 .submitform-online input {
+  color: #363636;
+  background-color: #FFFFFF;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   width: 230px;
 }
@@ -396,6 +404,7 @@ header {
 
 .checkbox-text {
   font-size: 14px;
+  color: #FFFFFF;
 }
 
 .checkbox-text-first {
@@ -417,18 +426,12 @@ header {
 }
 
 .prices-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.card-wrapper {
-  height: 608px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 420px);
 }
 
 .price-card {
-  background-size: contain;
   margin-right: 30px;
   width: 392px;
   height: 421px;
@@ -484,11 +487,43 @@ header {
 .item3 {
   background: url(../img/item3.jpg);
   background-size: contain;
-  margin: 0;
+}
+
+.request {
+  border: 1px solid blue;
+  margin-top: 418px;
+  color: #363636;
+  background: url("../img/steps-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .request-wrapper {
-  margin-top: 418px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.steps-wrapper {
+  width: 410px;
+  padding-top: 80px;
+  width: 370px;
+  height: 490px;
+}
+.steps-wrapper span {
+  font-size: 14px;
+}
+
+.step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.submitform-request {
+  background-color: #131313;
 }
 
 @media screen and (max-width: 1300px) {
@@ -536,6 +571,9 @@ header {
   }
   .online-wrapper p {
     margin: 21px auto 61px;
+  }
+  .prices-wrapper {
+    grid-template-columns: repeat(1, 340px);
   }
 }
 @media screen and (max-width: 768px) {
@@ -595,14 +633,15 @@ header {
     gap: 10px;
     grid-template-areas: "fname" "lname" "check" "button";
   }
+  .submitform-online input {
+    width: 100%;
+    background-color: #131313;
+    color: #FFFFFF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
   .submitform-online label {
     color: #ffffff;
     color: rgba(255, 255, 255, 0.5);
-  }
-  .submitform-online input {
-    background-color: #131313;
-    color: #FFFFFF;
-    width: 100%;
   }
   .submitform-online .fname {
     margin-bottom: 63px;

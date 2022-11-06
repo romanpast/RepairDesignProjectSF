@@ -572,14 +572,47 @@ header {
 }
 
 
-.request-wrapper {
+.request {
+    border: 1px solid blue;
     margin-top: 418px;
+    color: $black-text;
+    background: url("../img/steps-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.request-wrapper {
+    @include flexbox();
+    justify-content: space-between;
+}
+
+.steps-wrapper {
+    
+    width: 410px;
+    padding-top: 80px;
+    width: 370px;
+    height: 490px;
+
+    span {
+        font-size: 14px;
+    }
+}
+
+.step {
+    @include flexbox();
+    justify-content: flex-start;
 }
 
 .submitform-request {
     background-color: $black;
 
 }
+
+
+
+
+
 
 @media screen and (max-width: 1300px) {
 

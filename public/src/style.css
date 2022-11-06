@@ -483,8 +483,37 @@ header {
   background-size: contain;
 }
 
-.request-wrapper {
+.request {
+  border: 1px solid blue;
   margin-top: 418px;
+  color: #363636;
+  background: url("../img/steps-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.request-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.steps-wrapper {
+  width: 410px;
+  padding-top: 80px;
+  width: 370px;
+  height: 490px;
+}
+.steps-wrapper span {
+  font-size: 14px;
+}
+
+.step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .submitform-request {
