@@ -420,14 +420,12 @@ header {
 }
 
 .prices-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 420px);
 }
 
 .price-card {
-  background-size: contain;
   margin-right: 30px;
   width: 392px;
   height: 421px;
@@ -483,7 +481,6 @@ header {
 .item3 {
   background: url(../img/item3.jpg);
   background-size: contain;
-  margin: 0;
 }
 
 .request-wrapper {
@@ -541,10 +538,7 @@ header {
     margin: 21px auto 61px;
   }
   .prices-wrapper {
-    flex-direction: column;
-  }
-  .price-card {
-    margin: 0 auto 235px;
+    grid-template-columns: repeat(1, 340px);
   }
 }
 @media screen and (max-width: 768px) {
