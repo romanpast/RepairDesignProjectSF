@@ -28,5 +28,8 @@
     "postcss-pseudoelements": "^5.0.0",
     "postcss-vmin": "^3.0.0",
     "postcss-will-change": "^4.0.1"
+  },
+  "dependencies": {
+    "postcss-preset-env": "^7.8.2"
   }
 }

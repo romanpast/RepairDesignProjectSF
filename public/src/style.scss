@@ -362,6 +362,7 @@ header {
 
 
 .submitform {
+    color: #FFFFFF;
 
     label {
         color:rgb(255, 255, 255, 50%);
@@ -573,42 +574,84 @@ header {
 
 
 .request {
-    border: 1px solid blue;
     margin-top: 418px;
     color: $black-text;
     background: url("../img/steps-bg.jpg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position-y: -90px;
     
 }
 
 .request-wrapper {
-    @include flexbox();
+    display:flex;
     justify-content: space-between;
 }
 
 .steps-wrapper {
+    display: grid;
+    height:509px;
+    width: 400px;
     
-    width: 410px;
-    padding-top: 80px;
-    width: 370px;
-    height: 490px;
 
     span {
         font-size: 14px;
     }
 }
 
-.step {
+.step, .moneybox {
     @include flexbox();
     justify-content: flex-start;
 }
 
-.submitform-request {
-    background-color: $black;
-
+.step2, .step3 {
+    width: 160px;
+}
+.step4 {
+    width: 210px;
 }
 
+.submitform-request {
+    background-color: $black;
+    width: 506px;
+    padding: 28px 49px;
+    display: flex;
+    flex-direction: column;
+
+    .fname, .lname {
+        margin-bottom: 48px;
+    }
+
+    .email {
+        margin-bottom: 18px;
+    }
+    .checkbox-field {
+        align-self: flex-start;
+        margin-bottom: 40px;
+    }
+
+    .btn-submit-call {
+        justify-self: first baseline;
+        align-self: flex-end;
+    }
+}
+
+    .form-title {
+        font-size: 18px;
+        width: 250px;
+        align-self: center;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+   
+
+
+.moneybox {
+    margin-top: 30px;
+    font-size: 18px;
+    
+}
 
 
 
@@ -702,8 +745,13 @@ header {
     // section types
     .prices-wrapper {
         grid-template-columns: repeat(1, 340px);
-    
+        gap: 220px;
     }
+    
+
+    .request-wrapper {
+    flex-direction: column;
+}
 
 
 }

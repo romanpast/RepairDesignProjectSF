@@ -174,7 +174,9 @@ header {
   justify-content: start;
   grid-template-columns: auto auto;
   -moz-column-gap: 67px;
+       grid-column-gap: 67px;
        column-gap: 67px;
+  grid-row-gap: 45px;
   row-gap: 45px;
 }
 
@@ -192,7 +194,6 @@ header {
 
 .slide-titles {
   font-family: "Yeseva One", serif;
-  color: #ffffff;
   color: rgba(255, 255, 255, 0.3019607843);
   text-transform: uppercase;
   font-size: 14px;
@@ -233,7 +234,6 @@ header {
 .ball {
   height: 9.57px;
   width: 9.57px;
-  background-color: #ffffff;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   margin: auto 17px;
@@ -302,8 +302,10 @@ header {
   font-size: 18px;
 }
 
+.submitform {
+  color: #FFFFFF;
+}
 .submitform label {
-  color: #ffffff;
   color: rgba(255, 255, 255, 0.5);
   font-size: 13px;
 }
@@ -346,7 +348,6 @@ header {
   margin-top: 33px;
 }
 .submitform-online label {
-  color: #363636;
   color: rgba(54, 54, 54, 0.5);
 }
 .submitform-online input {
@@ -392,13 +393,11 @@ header {
 .checkmark:before {
   position: absolute;
   content: url("../img/tick.png");
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
   transition: 0.2s;
 }
 
 .checkbox:checked + .checkmark:before {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   opacity: 1;
 }
 
@@ -431,11 +430,18 @@ header {
   grid-template-columns: repeat(3, 420px);
 }
 
+[dir="ltr"] .price-card{
+  text-align: left;
+}
+
+[dir="rtl"] .price-card{
+  text-align: right;
+}
+
 .price-card {
   margin-right: 30px;
   width: 392px;
   height: 421px;
-  text-align: start;
 }
 
 .item-info {
@@ -490,40 +496,76 @@ header {
 }
 
 .request {
-  border: 1px solid blue;
   margin-top: 418px;
   color: #363636;
   background: url("../img/steps-bg.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position-y: -90px;
 }
 
 .request-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
 }
 
 .steps-wrapper {
-  width: 410px;
-  padding-top: 80px;
-  width: 370px;
-  height: 490px;
+  display: grid;
+  height: 509px;
+  width: 400px;
 }
 .steps-wrapper span {
   font-size: 14px;
 }
 
-.step {
+.step, .moneybox {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
 }
 
+.step2, .step3 {
+  width: 160px;
+}
+
+.step4 {
+  width: 210px;
+}
+
 .submitform-request {
   background-color: #131313;
+  width: 506px;
+  padding: 28px 49px;
+  display: flex;
+  flex-direction: column;
+}
+.submitform-request .fname, .submitform-request .lname {
+  margin-bottom: 48px;
+}
+.submitform-request .email {
+  margin-bottom: 18px;
+}
+.submitform-request .checkbox-field {
+  align-self: flex-start;
+  margin-bottom: 40px;
+}
+.submitform-request .btn-submit-call {
+  justify-self: first baseline;
+  align-self: flex-end;
+}
+
+.form-title {
+  font-size: 18px;
+  width: 250px;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.moneybox {
+  margin-top: 30px;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -574,6 +616,10 @@ header {
   }
   .prices-wrapper {
     grid-template-columns: repeat(1, 340px);
+    gap: 220px;
+  }
+  .request-wrapper {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 768px) {
@@ -640,7 +686,6 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
   .submitform-online label {
-    color: #ffffff;
     color: rgba(255, 255, 255, 0.5);
   }
   .submitform-online .fname {
@@ -669,11 +714,16 @@ header {
     cursor: pointer;
     background: #131313;
   }
+  [dir="ltr"] .price-card{
+    text-align: left;
+  }
+  [dir="rtl"] .price-card{
+    text-align: right;
+  }
   .price-card {
     margin: 0 auto 175px;
     width: 340px;
     height: 421px;
-    text-align: start;
   }
   .item-info {
     width: 270px;

@@ -300,6 +300,9 @@ header {
   font-size: 18px;
 }
 
+.submitform {
+  color: #FFFFFF;
+}
 .submitform label {
   color: rgba(255, 255, 255, 0.5);
   font-size: 13px;
@@ -484,40 +487,76 @@ header {
 }
 
 .request {
-  border: 1px solid blue;
   margin-top: 418px;
   color: #363636;
   background: url("../img/steps-bg.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position-y: -90px;
 }
 
 .request-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
 }
 
 .steps-wrapper {
-  width: 410px;
-  padding-top: 80px;
-  width: 370px;
-  height: 490px;
+  display: grid;
+  height: 509px;
+  width: 400px;
 }
 .steps-wrapper span {
   font-size: 14px;
 }
 
-.step {
+.step, .moneybox {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
 }
 
+.step2, .step3 {
+  width: 160px;
+}
+
+.step4 {
+  width: 210px;
+}
+
 .submitform-request {
   background-color: #131313;
+  width: 506px;
+  padding: 28px 49px;
+  display: flex;
+  flex-direction: column;
+}
+.submitform-request .fname, .submitform-request .lname {
+  margin-bottom: 48px;
+}
+.submitform-request .email {
+  margin-bottom: 18px;
+}
+.submitform-request .checkbox-field {
+  align-self: flex-start;
+  margin-bottom: 40px;
+}
+.submitform-request .btn-submit-call {
+  justify-self: first baseline;
+  align-self: flex-end;
+}
+
+.form-title {
+  font-size: 18px;
+  width: 250px;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.moneybox {
+  margin-top: 30px;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -568,6 +607,10 @@ header {
   }
   .prices-wrapper {
     grid-template-columns: repeat(1, 340px);
+    gap: 220px;
+  }
+  .request-wrapper {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 768px) {
