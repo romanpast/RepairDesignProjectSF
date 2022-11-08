@@ -700,8 +700,6 @@ header {
     display: none;
   }
   .slider {
-    overflow: hidden;
-    scroll-behavior: smooth;
     width: 340px;
     height: 241px;
     margin: 0;
