@@ -48,6 +48,11 @@ h3 {
   font-family: "Yeseva One", serif;
 }
 
+h2 {
+  color: #E3B873;
+  font-size: 27px;
+}
+
 h3 {
   font-size: 20px;
 }
@@ -185,7 +190,7 @@ header {
   margin-top: 9px;
 }
 
-.slider-wrapper {
+.slider-wrapper-top {
   grid-area: slider;
   width: 680px;
 }
@@ -441,6 +446,7 @@ header {
   position: relative;
   top: 294px;
   margin: 0 auto;
+  text-align: start;
 }
 .item-info h4 {
   font-family: "Yeseva One", serif;
@@ -559,6 +565,16 @@ header {
   font-size: 18px;
 }
 
+.design {
+  background: url("../img/design-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.design-wrapper {
+  display: flex;
+}
+
 @media screen and (max-width: 1300px) {
   nav,
 .btn-menu {
@@ -578,7 +594,7 @@ header {
     grid-template-areas: "header" "slider" "titles";
     justify-content: center;
   }
-  .slider-wrapper {
+  .slider-wrapper-top {
     margin: 0 auto 36px;
     width: auto;
   }
@@ -614,6 +630,9 @@ header {
   }
 }
 @media screen and (max-width: 768px) {
+  h2 {
+    font-size: 22px;
+  }
   h3 {
     font-size: 22px;
   }
@@ -645,7 +664,7 @@ header {
   .slide-titles {
     display: none;
   }
-  .slider-top {
+  .slider {
     width: 340px;
     height: 241px;
     margin: 0;
@@ -706,7 +725,7 @@ header {
     background: #131313;
   }
   .price-card {
-    margin: 0 auto 175px;
+    margin: 0 auto;
     width: 340px;
     height: 421px;
     text-align: start;

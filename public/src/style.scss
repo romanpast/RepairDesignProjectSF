@@ -65,6 +65,13 @@ h3 {
     font-family: $yeseva;
 }
 
+h2 {
+    color: $yellow;
+    font-size: 27px;
+}
+
+
+
 h3 {
     font-size: 20px;
 }
@@ -223,7 +230,7 @@ header {
 
 }
 
-.slider-wrapper {
+.slider-wrapper-top {
     grid-area: slider;
     width: 680px;
 }
@@ -518,7 +525,7 @@ header {
     position: relative;
     top: 294px;
     margin: 0 auto;
-    
+    text-align: start;
 
     h4 {
         font-family: $yeseva;
@@ -653,6 +660,17 @@ header {
     
 }
 
+// design
+.design {
+    background: url("../img/design-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.design-wrapper {
+    display: flex;
+}
+
 
 
 
@@ -690,7 +708,7 @@ header {
 
 
 
-    .slider-wrapper {
+    .slider-wrapper-top {
         margin: 0 auto 36px;
         width: auto;
     }
@@ -758,6 +776,10 @@ header {
 
 @media screen and (max-width: 768px) {
 
+    h2 {
+        font-size: 22px;
+    }
+
     h3 {
         font-size: 22px;
     }
@@ -803,7 +825,7 @@ header {
         display: none;
     }
 
-    .slider-top {
+    .slider {
         width: 340px;
         height: 241px;
         margin: 0;
@@ -902,7 +924,7 @@ header {
     // section types
 
     .price-card {
-        margin: 0 auto 175px;
+        margin: 0 auto;
         width: 340px;
         height: 421px;
         text-align: start;
