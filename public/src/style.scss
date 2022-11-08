@@ -662,13 +662,42 @@ header {
 
 // design
 .design {
+    margin-top: 242px;
+    height: 864px;
     background: url("../img/design-bg.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .design-wrapper {
     display: flex;
+}
+
+.slider-bottom {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-columns: auto auto;
+    gap: 43px;
+}
+
+.slide1-btm {
+    position: relative;
+    top: -40px;
+}
+
+.slide2-btm {
+    position: relative;
+    top: -112px;
+}
+
+.slide3-btm {
+    position: relative;
+    top: -43px;
+}
+
+.slide4-btm {
+    position: relative;
+    top: -398px;
 }
 
 
@@ -713,6 +742,7 @@ header {
         width: auto;
     }
 
+   
     .slide-titles {
         justify-content: space-between;
     }
