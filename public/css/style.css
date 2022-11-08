@@ -15,7 +15,7 @@
 }
 
 html, body {
-/*   overflow-x: hidden; */
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -573,10 +573,9 @@ header {
 
 .design {
   margin-top: 242px;
-  height: 864px;
   background: url("../img/design-bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 864px;
 }
 
 .design-wrapper {
@@ -586,7 +585,7 @@ header {
 .slider-bottom {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-columns: auto auto;
+  grid-template-rows: 557px 557px;
   gap: 43px;
 }
 

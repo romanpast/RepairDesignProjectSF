@@ -578,29 +578,35 @@ header {
 
 .slider-bottom {
   display: grid;
+  /* grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(min-content, max-content); */
   grid-template-columns: auto auto;
+  /* grid-template-rows: 557px 557px; */
   gap: 43px;
 }
 
 .slide1-btm {
-  position: relative;
-  top: -40px;
-}
+  /* position: relative;
+  top: -40px; */
+  margin-top: -40px;
+} 
 
 .slide2-btm {
-  position: relative;
-  top: -112px;
+  /* position: relative;
+  top: -112px; */
+  margin-top: -112px;
 }
 
 .slide3-btm {
-  position: relative;
-  top: -43px;
+  /* position: relative;
+  top: -43px; */
 }
 
 .slide4-btm {
-  position: relative;
-  top: -398px;
-}
+  /* position: relative;
+  top: -398px; */
+  margin-top: -355px;
+} 
 
 @media screen and (max-width: 1300px) {
   nav,
