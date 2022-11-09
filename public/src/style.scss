@@ -47,16 +47,27 @@ a {
 }
 
 button {
-    color: white;
     font-size: 11px;
     font-family: $nunito;
-    text-transform: uppercase;
-    background-color: $yellow;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
     border: 0;
     border-radius: 2px;
     cursor: pointer;
 }
+
+.info-field, button {
+    color: white;
+    text-transform: uppercase;
+    background-color: $yellow;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+}
+
+.info-field {
+    @include flexbox();
+    font-size: 18px;
+    font-family: $yeseva;
+}
+
+
 
 h1,
 h2,
@@ -498,16 +509,34 @@ header {
 
 // section types
 
-.types {
+.types, .clients {
     color: $black-text;
     @include flexbox();
     text-align: center;
 }
 
-.prices-wrapper {
+// .prices-wrapper 
+
+.card-wrapper {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 420px);
+}
+
+
+.item1 {
+    background: url(../img/item1.jpg);
+    background-size: contain;
+}
+
+.item2 {
+    background: url(../img/item2.jpg);
+    background-size: contain;
+}
+
+.item3 {
+    background: url(../img/item3.jpg);
+    background-size: contain;
 }
 
 
@@ -516,6 +545,8 @@ header {
     width: 392px;
     height: 421px;
     text-align: start;
+
+    
 
 }
 
@@ -556,7 +587,7 @@ header {
    
 }
 
-.btn-price {
+.price {
     bottom: auto;
     font-family: $yeseva;
     font-size: 18px;
@@ -564,20 +595,7 @@ header {
     height: 54px;
 }
 
-.item1 {
-    background: url(../img/item1.jpg);
-    background-size: contain;
-}
 
-.item2 {
-    background: url(../img/item2.jpg);
-    background-size: contain;
-}
-
-.item3 {
-    background: url(../img/item3.jpg);
-    background-size: contain;
-}
 
 
 .request {
@@ -671,35 +689,69 @@ header {
 
 .design-wrapper {
     display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-left: 7px; 
 }
 
 .slider-bottom {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-columns: auto auto;
     gap: 43px;
-}
+  }
+  
+  .slide1-btm {
+    /* position: relative;
+    top: -40px; */
+    margin-top: -40px;
+  } 
+  
+  .slide2-btm {
+    /* position: relative;
+    top: -112px; */
+    margin-top: -112px;
+  }
+  
+  .slide3-btm {
+    /* position: relative;
+    top: -43px; */
+  }
+  
+  .slide4-btm {
+    /* position: relative;
+    top: -398px; */
+    margin-top: -355px;
+  } 
 
-.slide1-btm {
-    position: relative;
-    top: -40px;
-}
+  .design-info {
+    max-width: 300px;
+    margin-top: 137px;
 
-.slide2-btm {
-    position: relative;
-    top: -112px;
-}
+    h2 {
+        margin-bottom: 47px;
+    }
 
-.slide3-btm {
-    position: relative;
-    top: -43px;
-}
+    ul {
+        font-size: 20px;
+        display: grid;
+        gap: 26px;
 
-.slide4-btm {
-    position: relative;
-    top: -398px;
-}
+        .active {
+            text-decoration: underline;
+            text-underline-offset: 7px;
+        }
+    }
+  }
 
+//   clients
+.clients {
+    margin-top: 110px;
+}
+  
+  
+  footer {
+    background-color: $black;
+  }
 
 
 
@@ -791,7 +843,9 @@ header {
     }
     
     // section types
-    .prices-wrapper {
+    // .prices-wrapper
+    
+    .card-wrapper {
         grid-template-columns: repeat(1, 340px);
         gap: 220px;
     }
@@ -824,6 +878,10 @@ header {
 
     .svg-devider {
         margin: 20px auto 40px;
+    }
+
+    .info-field {
+        font-size: 15px;
     }
 
     // section hero
@@ -975,6 +1033,10 @@ header {
         display: none;
     }
         
+    .price {
+        width: 190px;
+        height: 40px;
+    }
     
 
 }

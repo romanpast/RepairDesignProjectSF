@@ -30,15 +30,26 @@ a {
 }
 
 button {
-  color: white;
   font-size: 11px;
   font-family: "Nunito Sans", sans-serif;
-  text-transform: uppercase;
-  background-color: #E3B873;
-  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
   border: 0;
   border-radius: 2px;
   cursor: pointer;
+}
+
+.info-field, button {
+  color: white;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+}
+
+.info-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Yeseva One", serif;
 }
 
 h1,
@@ -419,7 +430,7 @@ header {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.types {
+.types, .clients {
   color: #363636;
   display: flex;
   justify-content: center;
@@ -427,10 +438,25 @@ header {
   text-align: center;
 }
 
-.prices-wrapper {
+.card-wrapper {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 420px);
+}
+
+.item1 {
+  background: url(../img/item1.jpg);
+  background-size: contain;
+}
+
+.item2 {
+  background: url(../img/item2.jpg);
+  background-size: contain;
+}
+
+.item3 {
+  background: url(../img/item3.jpg);
+  background-size: contain;
 }
 
 .price-card {
@@ -469,27 +495,12 @@ header {
   content: "•";
 }
 
-.btn-price {
+.price {
   bottom: auto;
   font-family: "Yeseva One", serif;
   font-size: 18px;
   width: 228px;
   height: 54px;
-}
-
-.item1 {
-  background: url(../img/item1.jpg);
-  background-size: contain;
-}
-
-.item2 {
-  background: url(../img/item2.jpg);
-  background-size: contain;
-}
-
-.item3 {
-  background: url(../img/item3.jpg);
-  background-size: contain;
 }
 
 .request {
@@ -567,21 +578,22 @@ header {
 
 .design {
   margin-top: 242px;
+  height: 864px;
   background: url("../img/design-bg.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 864px;
+  background-size: cover;
 }
 
 .design-wrapper {
   display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-left: 7px;
 }
 
 .slider-bottom {
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(min-content, max-content); */
   grid-template-columns: auto auto;
-  /* grid-template-rows: 557px 557px; */
   gap: 43px;
 }
 
@@ -589,7 +601,7 @@ header {
   /* position: relative;
   top: -40px; */
   margin-top: -40px;
-} 
+}
 
 .slide2-btm {
   /* position: relative;
@@ -606,7 +618,32 @@ header {
   /* position: relative;
   top: -398px; */
   margin-top: -355px;
-} 
+}
+
+.design-info {
+  max-width: 300px;
+  margin-top: 137px;
+}
+.design-info h2 {
+  margin-bottom: 47px;
+}
+.design-info ul {
+  font-size: 20px;
+  display: grid;
+  gap: 26px;
+}
+.design-info ul .active {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+
+.clients {
+  margin-top: 110px;
+}
+
+footer {
+  background-color: #131313;
+}
 
 @media screen and (max-width: 1300px) {
   nav,
@@ -654,7 +691,7 @@ header {
   .online-wrapper p {
     margin: 21px auto 61px;
   }
-  .prices-wrapper {
+  .card-wrapper {
     grid-template-columns: repeat(1, 340px);
     gap: 220px;
   }
@@ -677,6 +714,9 @@ header {
   }
   .svg-devider {
     margin: 20px auto 40px;
+  }
+  .info-field {
+    font-size: 15px;
   }
   .hero-wrapper {
     max-width: 100%;
@@ -774,5 +814,9 @@ header {
   }
   .request-wrapper {
     display: none;
+  }
+  .price {
+    width: 190px;
+    height: 40px;
   }
 }
