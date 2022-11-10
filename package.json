@@ -24,6 +24,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "pixrem": "^5.0.0",
     "postcss-color-rgba-fallback": "^4.0.0",
+    "postcss-css-reset": "^1.0.2",
     "postcss-opacity": "^5.0.0",
     "postcss-pseudoelements": "^5.0.0",
     "postcss-vmin": "^3.0.0",

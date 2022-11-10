@@ -8,6 +8,7 @@ const pseudoelements = require('postcss-pseudoelements');
 const vmin = require('postcss-vmin');
 const pixrem = require('pixrem');
 const will_change = require('postcss-will-change');
+const reset = require('postcss-css-reset');
 
 gulp.task('modify', () => {
 
@@ -18,7 +19,8 @@ gulp.task('modify', () => {
         opacity,
         pseudoelements,
         vmin,
-        pixrem
+        pixrem,
+        reset
       ];
 
       return gulp.src('public/src/style.css')

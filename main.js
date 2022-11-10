@@ -1,11 +1,15 @@
 // media query
 const mobileSize = window.matchMedia("(max-width: 768px)");
 const submitButton = document.querySelector("#submitApplication")
+const locationMap = document.querySelector(".map");
 const changeText = (media) => media.matches ? submitButton.innerHTML = "application" : submitButton.innerHTML = "submit your application";
+const changeImg = (media) => media.matches ? locationMap.src = "public/img/map-s.jpg" : locationMap.src = "public/img/map.jpg";
 
 changeText(mobileSize);
+changeImg(mobileSize);
 mobileSize.addEventListener("change", () => {
     changeText(mobileSize);
+    changeImg(mobileSize);
 });
 
 // checkbox

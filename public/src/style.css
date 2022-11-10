@@ -14,7 +14,10 @@
   list-style: none;
 }
 
-html, body {
+html,
+body {
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -37,7 +40,8 @@ button {
   cursor: pointer;
 }
 
-.info-field, button {
+.info-field,
+button {
   color: white;
   text-transform: uppercase;
   background-color: #E3B873;
@@ -430,7 +434,8 @@ header {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.types, .clients {
+.types,
+.clients {
   color: #363636;
   display: flex;
   justify-content: center;
@@ -526,14 +531,16 @@ header {
   font-size: 14px;
 }
 
-.step, .moneybox {
+.step,
+.moneybox {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
 }
 
-.step2, .step3 {
+.step2,
+.step3 {
   width: 160px;
 }
 
@@ -548,7 +555,8 @@ header {
   display: flex;
   flex-direction: column;
 }
-.submitform-request .fname, .submitform-request .lname {
+.submitform-request .fname,
+.submitform-request .lname {
   margin-bottom: 48px;
 }
 .submitform-request .email {
@@ -705,7 +713,7 @@ header {
   top: -222px;
   margin: 0 auto -170px;
   background-color: #181818;
-  width: 883px;
+  max-width: 883px;
   padding: 34px 181px;
 }
 
@@ -720,10 +728,12 @@ header {
 .questionform-wrapper input {
   background-color: #181818;
 }
-.questionform-wrapper .fname, .questionform-wrapper .lname {
+.questionform-wrapper .fname,
+.questionform-wrapper .lname {
   width: 230px;
 }
-.questionform-wrapper .question, .questionform-wrapper .checkbox-field {
+.questionform-wrapper .question,
+.questionform-wrapper .checkbox-field {
   margin-top: 50px;
   width: 100%;
 }
@@ -831,7 +841,10 @@ footer .navbar {
     width: 100%;
     border-radius: 0;
   }
-  .slide-titles {
+  .slide-titles,
+.request-wrapper,
+.clients,
+footer {
     display: none;
   }
   .slider {
@@ -909,11 +922,53 @@ footer .navbar {
     background: url(../img/item2-m.jpg);
     background-size: cover;
   }
-  .request-wrapper {
-    display: none;
-  }
   .price {
     width: 190px;
     height: 40px;
+  }
+  .questionform-wrapper {
+    display: grid;
+    margin-top: 50px;
+  }
+  .questionform-wrapper .fname,
+.questionform-wrapper .lname {
+    margin-bottom: 63px;
+    width: 100%;
+  }
+  .questionform-wrapper .question {
+    margin-top: 0;
+  }
+  .questionform-wrapper .checkbox-field {
+    margin-top: 21px;
+    width: auto;
+    justify-self: flex-start;
+  }
+  .questionform-wrapper .btn-submit {
+    margin-top: 67px;
+  }
+  .submitform-question {
+    margin: 0 auto -210px;
+  }
+  .questions {
+    background: #181818;
+  }
+  .map-wrapper {
+    display: grid;
+    grid-template-areas: "map" "location" "icons";
+  }
+  .map-wrapper h3 {
+    grid-area: location;
+    font-size: 18px;
+    margin: 0 auto 23px;
+    max-width: 310px;
+  }
+  .map-wrapper .icons {
+    grid-area: icons;
+    gap: 15px;
+    margin-bottom: 26px;
+  }
+  .map-wrapper .map {
+    grid-area: map;
+    margin: 0 auto 41px;
   }
 }

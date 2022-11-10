@@ -31,7 +31,10 @@ serif;
     list-style: none;
 }
 
-html, body {
+html,
+body {
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -54,7 +57,8 @@ button {
     cursor: pointer;
 }
 
-.info-field, button {
+.info-field,
+button {
     color: white;
     text-transform: uppercase;
     background-color: $yellow;
@@ -340,24 +344,22 @@ header {
     img {
         height: 100%;
     }
-   
+
 }
 
 
 // section video
 
 .online {
-   @include flexbox();
+    @include flexbox();
     text-align: center;
     margin-bottom: 147px;
-    background: linear-gradient(
-        $black 0px,
-        $black 329px,
-        white 329px,
-        white 100%
-    );
+    background: linear-gradient($black 0px,
+            $black 329px,
+            white 329px,
+            white 100%);
 
-    
+
 }
 
 .online-wrapper {
@@ -365,35 +367,37 @@ header {
     color: $black-text;
     max-width: 820px;
     text-align: center;
+
     h3 {
         color: white;
     }
+
     p {
         max-width: 660px;
         margin: 34px auto 91px;
         font-size: 18px;
-        
-        
+
+
     }
 }
 
 
 
 .submitform {
-    
+
     color: #FFFFFF;
 
     label {
-        color:rgb(255, 255, 255, 50%);
+        color: rgb(255, 255, 255, 50%);
         font-size: 13px;
     }
 
-    
-        
+
+
 
     input {
         background-color: $black;
-        color:#FFFFFF;
+        color: #FFFFFF;
         width: 100%;
         font-size: 14px;
         border: none;
@@ -402,14 +406,14 @@ header {
         border-bottom: 1px solid rgb(255, 255, 255, 15%);
     }
 
-       
-    }
 
-    .input-field {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 .submitform-online {
     max-width: 770px;
@@ -417,12 +421,13 @@ header {
     display: grid;
     justify-content: space-between;
     grid-template-areas:
-    "fname lname button"
-    "check check check";
+        "fname lname button"
+        "check check check";
 
     .fname {
         grid-area: fname;
     }
+
     .lname {
         grid-area: lname;
     }
@@ -431,6 +436,7 @@ header {
         grid-area: button;
         justify-self: center;
     }
+
     .checkbox-field {
         grid-area: check;
         margin-top: 33px;
@@ -439,7 +445,7 @@ header {
 
 
     label {
-        color:rgb(54, 54, 54, 50%)
+        color: rgb(54, 54, 54, 50%)
     }
 
     input {
@@ -466,8 +472,9 @@ header {
 
 .checkbox {
     display: none;
-  }
-  .checkmark {
+}
+
+.checkmark {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -479,38 +486,41 @@ header {
     background: #E3B873;
     color: #fff;
     justify-content: center;
-  }
-  .checkmark::before{
+}
+
+.checkmark::before {
     position: absolute;
     content: url('../img/tick.png');
     opacity: 0;
     transition: .2s;
-  }
-  .checkbox:checked + .checkmark::before{
+}
+
+.checkbox:checked+.checkmark::before {
     opacity: 1;
-  }
+}
 
 .checkbox-text {
     font-size: 14px;
-    color:#FFFFFF;
-    }
+    color: #FFFFFF;
+}
 
 .checkbox-text-first {
-        color: #181818;
-    }
+    color: #181818;
+}
 
 
 .video {
     cursor: pointer;
     margin: 0 auto 62px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-   
+
 }
 
 
 // section types
 
-.types, .clients {
+.types,
+.clients {
     color: $black-text;
     @include flexbox();
     text-align: center;
@@ -547,7 +557,7 @@ header {
     height: 421px;
     text-align: start;
 
-    
+
 
 }
 
@@ -582,10 +592,10 @@ header {
             content: "\2022";
         }
 
-        
+
     }
 
-   
+
 }
 
 .price {
@@ -606,33 +616,36 @@ header {
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: -90px;
-    
+
 }
 
 .request-wrapper {
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
 .steps-wrapper {
     display: grid;
-    height:509px;
+    height: 509px;
     width: 400px;
-    
+
 
     span {
         font-size: 14px;
     }
 }
 
-.step, .moneybox {
+.step,
+.moneybox {
     @include flexbox();
     justify-content: flex-start;
 }
 
-.step2, .step3 {
+.step2,
+.step3 {
     width: 160px;
 }
+
 .step4 {
     width: 210px;
 }
@@ -644,13 +657,15 @@ header {
     display: flex;
     flex-direction: column;
 
-    .fname, .lname {
+    .fname,
+    .lname {
         margin-bottom: 48px;
     }
 
     .email {
         margin-bottom: 18px;
     }
+
     .checkbox-field {
         align-self: flex-start;
         margin-bottom: 40px;
@@ -662,21 +677,21 @@ header {
     }
 }
 
-    .form-title {
-        font-size: 18px;
-        width: 250px;
-        align-self: center;
-        text-align: center;
-        margin-bottom: 40px;
-    }
+.form-title {
+    font-size: 18px;
+    width: 250px;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-   
+
 
 
 .moneybox {
     margin-top: 30px;
     font-size: 18px;
-    
+
 }
 
 // design
@@ -692,39 +707,39 @@ header {
     display: flex;
     justify-content: space-between;
     margin-right: 10px;
-    margin-left: 7px; 
+    margin-left: 7px;
 }
 
 .slider-bottom {
     display: grid;
     grid-template-columns: auto auto;
     gap: 43px;
-  }
-  
-  .slide1-btm {
+}
+
+.slide1-btm {
     /* position: relative;
     top: -40px; */
     margin-top: -40px;
-  } 
-  
-  .slide2-btm {
+}
+
+.slide2-btm {
     /* position: relative;
     top: -112px; */
     margin-top: -112px;
-  }
-  
-  .slide3-btm {
+}
+
+.slide3-btm {
     /* position: relative;
     top: -43px; */
-  }
-  
-  .slide4-btm {
+}
+
+.slide4-btm {
     /* position: relative;
     top: -398px; */
     margin-top: -355px;
-  } 
+}
 
-  .design-info {
+.design-info {
     max-width: 300px;
     margin-top: 137px;
 
@@ -742,7 +757,7 @@ header {
             text-underline-offset: 7px;
         }
     }
-  }
+}
 
 //   clients
 .clients {
@@ -760,15 +775,15 @@ header {
 .clients-wrapper {
     margin-top: 70px;
 }
-  
+
 .client-card {
     text-align: start;
     width: 318px;
-    
+
     p {
-    font-size: 13px;
-    color: #959595;
-    line-height: 23px;
+        font-size: 13px;
+        color: #959595;
+        line-height: 23px;
     }
 
     .props-info {
@@ -776,7 +791,7 @@ header {
         margin-top: 30px;
     }
 
-   
+
 }
 
 .client-info {
@@ -798,7 +813,7 @@ header {
     background-size: cover;
 
     h3 {
-        margin:0 auto 26px;
+        margin: 0 auto 26px;
         max-width: 600px;
     }
 
@@ -816,9 +831,9 @@ header {
 .submitform-question {
     position: relative;
     top: -222px;
-    margin:0 auto calc(-222px + 52px);
+    margin: 0 auto calc(-222px + 52px);
     background-color: #181818;
-    width: 883px;
+    max-width: 883px;
     padding: 34px 181px;
 }
 
@@ -831,13 +846,15 @@ header {
     input {
         background-color: #181818;
     }
-   
 
-    .fname, .lname {
+
+    .fname,
+    .lname {
         width: 230px;
     }
 
-    .question, .checkbox-field {
+    .question,
+    .checkbox-field {
         margin-top: 50px;
         width: 100%;
     }
@@ -847,21 +864,21 @@ header {
         margin: 50px auto 0;
     }
 }
-    
-    
-    // flex-direction: column;
-
-   
 
 
-  
-  footer {
+// flex-direction: column;
+
+
+
+
+
+footer {
     background-color: $black;
 
     .navbar {
         height: 133px;
     }
-  }
+}
 
 
 
@@ -904,7 +921,7 @@ header {
         width: auto;
     }
 
-   
+
     .slide-titles {
         justify-content: space-between;
     }
@@ -927,33 +944,34 @@ header {
 
     // section online
 
-   
+
 
     .submitform-online {
-        
-    justify-content: center;
-    gap: 10px;
-    grid-template-areas:
-    "fname lname"
-    "button button"
-    "check check";
+
+        justify-content: center;
+        gap: 10px;
+        grid-template-areas:
+            "fname lname"
+            "button button"
+            "check check";
     }
 
     .online-wrapper {
+
         // color: $black-text;
         // max-width: 820px;
         // display: flex;
         // justify-content: center;
         // align-items: center;
         // text-align: center;
-         p {
+        p {
             margin: 21px auto 61px;
-            
+
         }
     }
-    
-   
-    
+
+
+
     .card-wrapper {
         grid-template-columns: repeat(1, 340px);
         gap: 220px;
@@ -962,11 +980,11 @@ header {
             gap: 20px;
         }
     }
-    
+
 
     .request-wrapper {
-    flex-direction: column;
-}
+        flex-direction: column;
+    }
 
 
 }
@@ -1022,7 +1040,10 @@ header {
 
     // section projects 
 
-    .slide-titles {
+    .slide-titles,
+    .request-wrapper,
+    .clients,
+    footer {
         display: none;
     }
 
@@ -1050,13 +1071,11 @@ header {
 
     .online {
         margin-bottom: 58px;
-        background: linear-gradient(
-        to top,
-        white 0px,
-        white 25px,
-        $black 25px,
-        $black 100%
-    );
+        background: linear-gradient(to top,
+                white 0px,
+                white 25px,
+                $black 25px,
+                $black 100%);
 
 
     }
@@ -1065,10 +1084,10 @@ header {
         justify-content: center;
         gap: 10px;
         grid-template-areas:
-        "fname"
-        "lname"
-        "check"
-        "button";
+            "fname"
+            "lname"
+            "check"
+            "button";
 
         input {
             width: 100%;
@@ -1092,34 +1111,36 @@ header {
         }
 
         .checkbox-text-first {
-            color:#FFFFFF;
+            color: #FFFFFF;
         }
 
         .btn-submit-online {
             margin-top: 62px;
         }
-        }
+    }
 
     .online-wrapper {
         color: #FFFFFF;
+
         // max-width: 820px;
         // display: flex;
         // justify-content: center;
         // align-items: center;
         // text-align: center;
-         p {
+        p {
             font-size: 11px;
             max-width: 340px;
             margin: 21px auto 61px;
-            
+
         }
     }
+
     .video {
         width: 340px;
         cursor: pointer;
         background: $black;
-        
-        
+
+
     }
 
     // section types
@@ -1129,8 +1150,9 @@ header {
         width: 340px;
         height: 421px;
         text-align: start;
-    
+
     }
+
     .item-info {
         width: 270px;
         top: 223px;
@@ -1141,16 +1163,78 @@ header {
         background: url(../img/item2-m.jpg);
         background-size: cover;
     }
-    
-    .request-wrapper {
-        display: none;
-    }
-        
+
+
+
     .price {
         width: 190px;
         height: 40px;
     }
+
+    // questions 
+
+    .questionform-wrapper {
+        display: grid;
+        margin-top: 50px;
+
+        .fname,
+        .lname {
+            margin-bottom: 63px;
+            width: 100%;
+        }
+
+        .question {
+            margin-top: 0;
+        }
+
+        .checkbox-field {
+            margin-top: 21px;
+            width: auto;
+            justify-self: flex-start;
+        }
+
+        .btn-submit {
+            margin-top: 67px;
+        }
+    }
+
+        .submitform-question {
+                    margin: 0 auto calc(-222px + 12px);
+                }
+
     
 
-}
+    .questions {
+        background: #181818;
+    }
 
+    .map-wrapper {
+        display: grid;
+        grid-template-areas: "map"
+            "location"
+            "icons";
+
+        h3 {
+            grid-area: location;
+            font-size: 18px;
+            margin: 0 auto 23px;
+            max-width: 310px;
+        }
+
+        .icons {
+            grid-area: icons;
+            gap: 15px;
+            margin-bottom: 26px;
+        }
+
+        .map {
+            grid-area: map;
+            margin: 0 auto 41px;
+        }
+
+
+
+    }
+
+
+}
