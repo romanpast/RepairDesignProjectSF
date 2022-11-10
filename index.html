@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/src/style.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <script src="main.js" defer></script>
     <title>Repair Design</title>
 </head>
 
@@ -74,11 +75,13 @@
                             <span class="projects-info" id="repairCost">Upon request</span>
                         </div>
                         <div class="pagination pagination-outer">
-                            <button class="prev"><img src="public/img/arrow-left.png" alt="previous page"></button>
+                            <button class="prev prev-top"><img src="public/img/arrow-left.png"
+                                    alt="previous page"></button>
                             <div class="ball"></div>
                             <div class="ball"></div>
                             <div class="ball"></div>
-                            <button class="next"><img src="public/img/arrow-right.png" alt="next page"></button>
+                            <button class="next next-top"><img src="public/img/arrow-right.png"
+                                    alt="next page"></button>
                         </div>
                     </div>
                     <div class="slider-wrapper-top">
@@ -102,8 +105,9 @@
                                     title="Rostov-on-Don, Patriotic"></div>
                         </div>
                         <div class="pagination pagination-inner">
-                            <button class="prev"><img src="public/img/btn-prev.svg" alt="previous page"></button>
-                            <button class="next"><img src="public/img/btn-next.svg" alt="next page"></button>
+                            <button class="prev prev-top"><img src="public/img/btn-prev.svg"
+                                    alt="previous page"></button>
+                            <button class="next next-top"><img src="public/img/btn-next.svg" alt="next page"></button>
                         </div>
 
                     </div>
@@ -291,6 +295,11 @@
                     </div>
 
                     <div class="slider slider-bottom" id="slider-bottom">
+                        <div class="pagination pagination-inner">
+                            <button class="prev prev-btm"><img src="public/img/btn-prev.svg"
+                                    alt="previous page"></button>
+                            <button class="next next-btm"><img src="public/img/btn-next.svg" alt="next page"></button>
+                        </div>
                         <div class="slide-bottom slide1-btm"><img src="public/img/slide1-btm.jpg" alt="Repair design"
                                 title="Repair design"></div>
                         <div class="slide-bottom slide2-btm"><img src="public/img/slide2-btm.jpg" alt="Repair design"
@@ -299,8 +308,10 @@
                                 title="Repair design"></div>
                         <div class="slide-bottom slide4-btm"><img src="public/img/slide4-btm.jpg" alt="Repair design"
                                 title="Repair design"></div>
-
+                        
                     </div>
+                    
+                    
                 </div>
             </div>
         </section>
@@ -325,9 +336,9 @@
                             The repair process was turned out in terms, faster than anticipated. Team mobile and
                             professional. Works performed qualitatively without comments. Quality satisfied. Prices
                             democratic. I recommend these masters.</p>
-                            <img class="props-info" src="public/img/client1-info.svg" alt="40 meters 48 days">
-                        
-                        
+                        <img class="props-info" src="public/img/client1-info.svg" alt="40 meters 48 days">
+
+
                     </div>
 
 
@@ -358,7 +369,7 @@
                             The repair process was turned out in terms, faster than anticipated. Team mobile and
                             professional. Works performed qualitatively without comments. Quality satisfied. Prices
                             democratic. I recommend these masters.</p>
-                            <img class="props-info" src="public/img/client3-info.svg" alt="56 meters 86 days">
+                        <img class="props-info" src="public/img/client3-info.svg" alt="56 meters 86 days">
 
                     </div>
                 </div>
@@ -367,44 +378,46 @@
 
         <section class="questions">
             <div class="container">
-            <form action="pastroman98@gmail.com" class="submitform submitform-question">
-                
-                <h3>have any questions?</h3>
-                <div class="questionform-wrapper">
-                <label for="fname" class="input-field fname">Name
-                    <input type="text" name="fname" value="What is your name:">
-                </label>
+                <form action="pastroman98@gmail.com" class="submitform submitform-question">
 
-                <label for="lname" class="input-field lname">Phone
-                    <input type="text" name="lname" value="Your phone number:">
-                </label>
+                    <h3>have any questions?</h3>
+                    <div class="questionform-wrapper">
+                        <label for="fname" class="input-field fname">Name
+                            <input type="text" name="fname" value="What is your name:">
+                        </label>
 
-                <label for="question" class="input-field question">Email
-                    <input type="text" name="question" value="I want to know:">
-                </label>
+                        <label for="lname" class="input-field lname">Phone
+                            <input type="text" name="lname" value="Your phone number:">
+                        </label>
 
-                <label class="checkbox-field">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkmark" id="checkmark"></span>
-                    <span class="checkbox-text">I agree to the processing of personal
-                        data.</span>
-                </label>
+                        <label for="question" class="input-field question">Email
+                            <input type="text" name="question" value="I want to know:">
+                        </label>
 
-                <button class="btn-submit" type="submit">Submit</button>
-            </div>
-            </form>
-            <div class="map-wrapper">
-                <h3 class="txt-yellow">Rostov-on-Don, Nansen St., 239 Shopping Center
-                    Decorum Tel +7 (928) 768 32 29</h3>
+                        <label class="checkbox-field">
+                            <input type="checkbox" class="checkbox">
+                            <span class="checkmark" id="checkmark"></span>
+                            <span class="checkbox-text">I agree to the processing of personal
+                                data.</span>
+                        </label>
+
+                        <button class="btn-submit" type="submit">Submit</button>
+                    </div>
+                </form>
+                <div class="map-wrapper">
+                    <h3 class="txt-yellow">Rostov-on-Don, Nansen St., 239 Shopping Center
+                        Decorum Tel +7 (928) 768 32 29</h3>
                     <div class="icons"> <a href="" class="icon"><img src="public/img/icon-email.svg" alt="email"></a>
                         <a href="" class="icon"><img src="public/img/icon-inst.svg" alt="instagram"></a></div>
-                   
-                    <img src="public/img/map.jpg" alt="location" class="map">
-                    </div>
+                    <img class="map" src="public/img/map.jpg" alt="location"
+                        srcset="public/img/map.jpg 925w, public/img/map-s.jpg 340w"
+                        sizes="(max-width: 1300px) 340px, 925px">
+
+                </div>
             </div>
-            
+
         </section>
-    
+
     </main>
 
     <footer>
@@ -426,7 +439,7 @@
             </div>
         </div>
     </footer>
-    <script src="main.js"></script>
+    
 </body>
 
 </html>

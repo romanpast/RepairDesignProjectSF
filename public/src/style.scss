@@ -714,6 +714,11 @@ header {
     display: grid;
     grid-template-columns: auto auto;
     gap: 43px;
+
+    .pagination-inner {
+        top: 0;
+        width: 315px;
+    }
 }
 
 .slide1-btm {
@@ -741,7 +746,7 @@ header {
 
 .design-info {
     max-width: 300px;
-    margin-top: 137px;
+    margin: 137px auto 0;
 
     h2 {
         margin-bottom: 47px;
@@ -981,6 +986,10 @@ footer {
         }
     }
 
+    .request {
+        margin-bottom: 0;
+        margin-top: 250px;
+    }
 
     .request-wrapper {
         flex-direction: column;
@@ -1009,13 +1018,21 @@ footer {
         }
     }
 
+    .design-info {
+
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 24px;
+        }
+
+    }
+
     .slide-bottom {
         display: none;
     }
 
     .slider-bottom {
         background: url("../img/slide1-btm-s.jpg");
-
         width: 340px;
         height: 241px;
         margin: 0;

@@ -1,21 +1,13 @@
 // media query
 const mobileSize = window.matchMedia("(max-width: 768px)");
 const submitButton = document.querySelector("#submitApplication")
-const locationMap = document.querySelector(".map");
 const changeText = (media) => media.matches ? submitButton.innerHTML = "application" : submitButton.innerHTML = "submit your application";
 const changeImg = (media) => media.matches ? locationMap.src = "public/img/map-s.jpg" : locationMap.src = "public/img/map.jpg";
 
-changeText(mobileSize);
-changeImg(mobileSize);
+
 mobileSize.addEventListener("change", () => {
     changeText(mobileSize);
-    changeImg(mobileSize);
 });
-
-// checkbox
-const checkbox = document.getElementById("checkmark");
-const checkboxBefore = window.getComputedStyle(checkbox, "::before");
-const checked = () => checkboxBefore.checked ? checkboxBefore.opasity = "1" : checkbox.opasity = 0;
 
 
 // slider-top
@@ -44,8 +36,8 @@ const repairTime = document.querySelector('#repairTime');
 const pagination = document.querySelectorAll('.ball');
 const slider = document.querySelector('#slider-top');
 const slide = document.querySelectorAll('.slide');
-const prev = document.querySelectorAll('.prev');
-const next = document.querySelectorAll('.next');
+const prev = document.querySelectorAll('.prev-top');
+const next = document.querySelectorAll('.next-top');
 const slideTitle = document.querySelectorAll('.slide-title');
 const underline = document.querySelectorAll('.underline');
 let index = 0;
@@ -106,7 +98,7 @@ prev.forEach((el) => {
 
 next.forEach((el) => {
     el.addEventListener('click', () => {
-      nextSlide();  
+        nextSlide();
     })
 })
 
@@ -114,14 +106,14 @@ next.forEach((el) => {
 
 let touchStartX = 0;
 let touchEndX = 0;
-    
+
 const checkDirection = () => (touchEndX > touchStartX) ? prevSlide() : nextSlide();
 
 slider.addEventListener('touchstart', e => {
-  touchStartX = e.changedTouches[0].screenX
+    touchStartX = e.changedTouches[0].screenX
 })
 
 slider.addEventListener('touchend', e => {
-  touchEndX = e.changedTouches[0].screenX
-  checkDirection();
+    touchEndX = e.changedTouches[0].screenX
+    checkDirection();
 })

@@ -604,6 +604,10 @@ header {
   grid-template-columns: auto auto;
   gap: 43px;
 }
+.slider-bottom .pagination-inner {
+  top: 0;
+  width: 315px;
+}
 
 .slide1-btm {
   /* position: relative;
@@ -630,7 +634,7 @@ header {
 
 .design-info {
   max-width: 300px;
-  margin-top: 137px;
+  margin: 137px auto 0;
 }
 .design-info h2 {
   margin-bottom: 47px;
@@ -802,6 +806,10 @@ footer .navbar {
   .card-wrapper.clients-wrapper {
     gap: 20px;
   }
+  .request {
+    margin-bottom: 0;
+    margin-top: 250px;
+  }
   .request-wrapper {
     flex-direction: column;
   }
@@ -816,6 +824,10 @@ footer .navbar {
   }
   .design-list li {
     display: none;
+  }
+  .design-info h2 {
+    margin-top: 30px;
+    margin-bottom: 24px;
   }
   .slide-bottom {
     display: none;
