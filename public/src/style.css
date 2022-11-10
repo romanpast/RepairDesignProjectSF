@@ -471,7 +471,7 @@ header {
   width: 330px;
   position: relative;
   top: 294px;
-  margin: 0 auto;
+  margin: 0 auto -294px;
   text-align: start;
 }
 .item-info h4 {
@@ -638,11 +638,105 @@ header {
 }
 
 .clients {
-  margin-top: 110px;
+  margin: 110px auto 332px;
+}
+.clients span {
+  display: block;
+  margin: auto;
+  width: 370px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.clients-wrapper {
+  margin-top: 70px;
+}
+
+.client-card {
+  text-align: start;
+  width: 318px;
+}
+.client-card p {
+  font-size: 13px;
+  color: #959595;
+  line-height: 23px;
+}
+.client-card .props-info {
+  margin-left: -40px;
+  margin-top: 30px;
+}
+
+.client-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.client-info img {
+  margin-right: 25px;
+}
+
+.questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("../img/questions-bg.jpg");
+  background-size: cover;
+}
+.questions h3 {
+  margin: 0 auto 26px;
+  max-width: 600px;
+}
+.questions .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.questions .map {
+  margin: 43px auto 65px;
+}
+
+.submitform-question {
+  position: relative;
+  top: -222px;
+  margin: 0 auto -170px;
+  background-color: #181818;
+  width: 883px;
+  padding: 34px 181px;
+}
+
+.questionform-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.questionform-wrapper input {
+  background-color: #181818;
+}
+.questionform-wrapper .fname, .questionform-wrapper .lname {
+  width: 230px;
+}
+.questionform-wrapper .question, .questionform-wrapper .checkbox-field {
+  margin-top: 50px;
+  width: 100%;
+}
+.questionform-wrapper .btn-submit {
+  justify-self: center;
+  margin: 50px auto 0;
 }
 
 footer {
   background-color: #131313;
+}
+footer .navbar {
+  height: 133px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -694,6 +788,9 @@ footer {
   .card-wrapper {
     grid-template-columns: repeat(1, 340px);
     gap: 220px;
+  }
+  .card-wrapper.clients-wrapper {
+    gap: 20px;
   }
   .request-wrapper {
     flex-direction: column;
@@ -806,7 +903,7 @@ footer {
   .item-info {
     width: 270px;
     top: 223px;
-    margin: 0;
+    margin: 0 0 -223px;
   }
   .item2 {
     background: url(../img/item2-m.jpg);

@@ -380,6 +380,7 @@ header {
 
 
 .submitform {
+    
     color: #FFFFFF;
 
     label {
@@ -555,7 +556,7 @@ header {
     width: 330px;
     position: relative;
     top: 294px;
-    margin: 0 auto;
+    margin: 0 auto -294px;
     text-align: start;
 
     h4 {
@@ -745,12 +746,121 @@ header {
 
 //   clients
 .clients {
-    margin-top: 110px;
+    margin: 110px auto 332px;
+
+    span {
+        display: block;
+        margin: auto;
+        width: 370px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+.clients-wrapper {
+    margin-top: 70px;
 }
   
+.client-card {
+    text-align: start;
+    width: 318px;
+    
+    p {
+    font-size: 13px;
+    color: #959595;
+    line-height: 23px;
+    }
+
+    .props-info {
+        margin-left: -40px;
+        margin-top: 30px;
+    }
+
+   
+}
+
+.client-info {
+    @include flexbox();
+    width: 260px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    img {
+        margin-right: 25px;
+    }
+}
+
+// questions
+.questions {
+    @include flexbox();
+    text-align: center;
+    background: url("../img/questions-bg.jpg");
+    background-size: cover;
+
+    h3 {
+        margin:0 auto 26px;
+        max-width: 600px;
+    }
+
+    .icons {
+        @include flexbox();
+        gap: 15px;
+    }
+
+    .map {
+        margin: 43px auto 65px;
+    }
+
+}
+
+.submitform-question {
+    position: relative;
+    top: -222px;
+    margin:0 auto calc(-222px + 52px);
+    background-color: #181818;
+    width: 883px;
+    padding: 34px 181px;
+}
+
+.questionform-wrapper {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    input {
+        background-color: #181818;
+    }
+   
+
+    .fname, .lname {
+        width: 230px;
+    }
+
+    .question, .checkbox-field {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .btn-submit {
+        justify-self: center;
+        margin: 50px auto 0;
+    }
+}
+    
+    
+    // flex-direction: column;
+
+   
+
+
   
   footer {
     background-color: $black;
+
+    .navbar {
+        height: 133px;
+    }
   }
 
 
@@ -842,12 +952,15 @@ header {
         }
     }
     
-    // section types
-    // .prices-wrapper
+   
     
     .card-wrapper {
         grid-template-columns: repeat(1, 340px);
         gap: 220px;
+
+        &.clients-wrapper {
+            gap: 20px;
+        }
     }
     
 
@@ -1021,7 +1134,7 @@ header {
     .item-info {
         width: 270px;
         top: 223px;
-        margin: 0;
+        margin: 0 0 -223px;
     }
 
     .item2 {
