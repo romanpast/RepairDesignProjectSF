@@ -510,6 +510,7 @@ header {
 
 .request {
   margin-top: 418px;
+  margin-bottom: 242px;
   color: #363636;
   background: url("../img/steps-bg.jpg");
   background-repeat: no-repeat;
@@ -585,7 +586,6 @@ header {
 }
 
 .design {
-  margin-top: 242px;
   height: 864px;
   background: url("../img/design-bg.jpg");
   background-repeat: no-repeat;
@@ -805,6 +805,27 @@ footer .navbar {
   .request-wrapper {
     flex-direction: column;
   }
+  .design {
+    height: auto;
+    background: white;
+  }
+  .design-wrapper {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+  .design-list li {
+    display: none;
+  }
+  .slide-bottom {
+    display: none;
+  }
+  .slider-bottom {
+    background: url("../img/slide1-btm-s.jpg");
+    width: 340px;
+    height: 241px;
+    margin: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   h2 {
@@ -842,7 +863,7 @@ footer .navbar {
     border-radius: 0;
   }
   .slide-titles,
-.request-wrapper,
+.request,
 .clients,
 footer {
     display: none;
@@ -926,6 +947,10 @@ footer {
     width: 190px;
     height: 40px;
   }
+  .design {
+    height: auto;
+    background: linear-gradient(to top, #181818 0px, #181818 121px, white 121px, white 100%);
+  }
   .questionform-wrapper {
     display: grid;
     margin-top: 50px;
@@ -947,7 +972,8 @@ footer {
     margin-top: 67px;
   }
   .submitform-question {
-    margin: 0 auto -210px;
+    top: 0px;
+    margin: 0;
   }
   .questions {
     background: #181818;
